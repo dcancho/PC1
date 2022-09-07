@@ -112,6 +112,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Asiento.hpp" />
+    <ClInclude Include="Cliente.hpp" />
+    <ClInclude Include="Funcion.hpp" />
+    <ClInclude Include="Lista.hpp" />
+    <ClInclude Include="Pedido.hpp" />
+    <ClInclude Include="Productos.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
