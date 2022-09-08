@@ -28,7 +28,7 @@ namespace Cine
             {
             case 1:
                 system("cls");
-                realizarPedido(&pedidos);
+                realizarPedido(&pedidos,&clientes);
                 break;
             case 2:
                 system("cls");

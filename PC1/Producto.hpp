@@ -1,6 +1,6 @@
 #include <conio.h>
 #include <stdio.h>
-
+#define byte unsigned char
 using namespace std;
 
 class Producto
@@ -13,11 +13,11 @@ public:
         Nombre = "";
         Precio = 0;
     }
-    Producto(string nombre, float precio)
-    {
-        Nombre = nombre;
-        this->Precio = precio;
-    }
+	Producto(string nombre, float precio)
+	{
+		this->Nombre = nombre;
+		this->Precio = precio;
+	}
     float getPrecio()
     {
         return Precio;

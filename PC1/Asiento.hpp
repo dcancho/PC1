@@ -3,17 +3,14 @@
 
 class Asiento : public Producto
 {
-    byte IDPedido;
     bool ocupado;
     public:
     Asiento() : Producto()
     {
-        IDPedido = 0;
         ocupado = false;
     }
-    Asiento(byte idpedido) : Producto(15.0,1)
+    Asiento() : Producto("Butaca",15.0)
     {
-        this->IDPedido = idpedido;
         ocupado = true;
     }
 };
