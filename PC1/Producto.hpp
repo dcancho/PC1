@@ -1,17 +1,22 @@
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
 class Producto
 {
+    string Nombre;
     float Precio;
-    int Cantidad;
-    public:
+public:
     Producto()
     {
+        Nombre = "";
         Precio = 0;
-        Cantidad = 0;
     }
-    Producto(float precio, int cantidad)
+    Producto(string nombre, float precio)
     {
+        Nombre = nombre;
         this->Precio = precio;
-        this->Cantidad = cantidad;
     }
     float getPrecio()
     {

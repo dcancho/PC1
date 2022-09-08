@@ -31,11 +31,11 @@ namespace Cine
 	}
 	void realizarPedido(Lista<Pedido*>* pedidos)
 	{
-
+		
 	}
 	void verPedido(Lista<Pedido*>* pedidos)
 	{
-
+		//TO DO
 	}
 	bool loggearCliente(Lista<Cliente*>* clientes)
 	{
