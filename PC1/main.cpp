@@ -1,10 +1,7 @@
-#include "Cliente.hpp"
-#include "Pedido.hpp"
+#include "Control.h"
 #include <iostream>
 #include <stdio.h>
 #define byte unsigned char
-
-using namespace System.IO;
 
 namespace Cine
 {
@@ -16,26 +13,10 @@ namespace Cine
         printf("3. Salir\n");
     }
 
-    // Cargar lista de pedidos y clientes, si existen
-    void cargarArchivos(Lista<Pedido *> *pedidos, Lista<Cliente *> *clientes)
-    {
-        // Cargar pedidos
-        if (File::Exists("db/pedidos.txt"))
-        {
-            // TO DO
-        }
-        // Cargar clientes
-        if (File::Exists("db/clientes.txt"))
-        {
-            // TO DO
-        }
-    }
-
     int main()
     {
-
-        Lista<Pedido *> pedidos = nullptr;
-        Lista<Cliente *> clientes = nullptr;
+        Lista<Pedido *> pedidos;
+        Lista<Cliente *> clientes;
         cargarArchivos(&pedidos, &clientes);
 
         int opcion;
@@ -47,11 +28,11 @@ namespace Cine
             {
             case 1:
                 system("cls");
-                realizarPedido();
+                realizarPedido(&pedidos);
                 break;
             case 2:
                 system("cls");
-                verPedido();
+                verPedido(&pedidos);
                 break;
             case 3:
                 system("cls");

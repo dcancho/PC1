@@ -1,18 +1,19 @@
-#include "Pedido.hpp"
+#include "Producto.hpp"
+#define byte unsigned char
 
-class Asiento : public Pedido
+class Asiento : public Producto
 {
-    Pedido* pedido;
+    byte IDPedido;
     bool ocupado;
     public:
-    Asiento() : Pedido()
+    Asiento() : Producto()
     {
-        pedido = nullptr;
+        IDPedido = 0;
         ocupado = false;
     }
-    Asiento(Pedido* pedido) : Pedido(15.0d,1)
+    Asiento(byte idpedido) : Producto(15.0,1)
     {
-        this->pedido = pedido;
+        this->IDPedido = idpedido;
         ocupado = true;
     }
 };

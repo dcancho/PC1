@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -114,10 +114,11 @@
   <ItemGroup>
     <ClInclude Include="Asiento.hpp" />
     <ClInclude Include="Cliente.hpp" />
+    <ClInclude Include="Control.h" />
     <ClInclude Include="Funcion.hpp" />
     <ClInclude Include="Lista.hpp" />
     <ClInclude Include="Pedido.hpp" />
-    <ClInclude Include="Productos.hpp" />
+    <ClInclude Include="Producto.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

@@ -1,28 +1,30 @@
 #include "Asiento.hpp"
 #include "Lista.hpp"
-#include "Productos.hpp"
+#include "Producto.hpp"
+#define byte unsigned char
+
 class Pedido
 {
-    Lista<Producto*> productos;
+    Lista<Producto*> Productos;
+    byte ID;
     float Total;
     public:
     Pedido()
     {
         Total = 0;
-        productos = Lista<Producto*>();
+        Productos = Lista<Producto*>();
     }
     void nuevoProducto(Producto* producto)
     {
-        productos.push_back(producto);
+        Productos.Agregar(producto);
         Total += producto->getPrecio();
-    }
-    void eliminarProducto(int posicion)
-    {
-        productos.pop_back();
-        Total -= producto->getPrecio();
     }
     float getTotal()
     {
         return Total;
+    }
+    byte getID()
+    {
+        return ID;
     }
 };
