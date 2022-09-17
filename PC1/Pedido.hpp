@@ -1,6 +1,7 @@
 #include "Asiento.hpp"
 #include "Lista.hpp"
 #include "Producto.hpp"
+#include <fstream>
 #define byte unsigned char
 
 class Pedido
@@ -26,5 +27,9 @@ class Pedido
     byte getID()
     {
         return ID;
+    }
+    void EmitirComprobante(bool imprimirArchivo)
+    {
+        
     }
 };
